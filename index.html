@@ -3,20 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shubham Ramtekkar | Full-Stack Developer</title>
+  <title>Shubham Ramtekkar | Cyber Security Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="icon" type="image/svg+xml" href="sr-logo.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav class="navbar">
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <canvas id="particleCanvas"></canvas>
+  <canvas id="dataStream"></canvas>
+  <div class="bg-noise"></div>
+  <div class="scanline"></div>
+
+  <nav class="navbar reveal">
     <div class="container nav-container">
       <a href="#" class="logo"><img src="sr-logo.svg" alt="SR" class="logo-img" /> Shubham</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -29,22 +41,22 @@
   <section id="home" class="hero">
     <div class="container hero-container">
       <div class="hero-text">
-        <span class="hero-greeting">Hello, I'm</span>
-        <h1>Shubham Ramtekkar</h1>
-        <h2>Full-Stack Developer</h2>
-        <p>Building modern web applications with cutting-edge technologies. I love turning complex problems into simple, beautiful solutions.</p>
-        <div class="hero-social">
+        <span class="hero-greeting reveal">Hello, I'm</span>
+        <h1 class="reveal" data-split>Shubham Ramtekkar</h1>
+        <h2 class="reveal" data-split>Cyber Security Student</h2>
+        <p class="reveal" data-split">Computer Science Engineering student specializing in Cyber Security with hands-on experience in development and security.</p>
+        <div class="hero-social reveal">
           <a href="https://github.com/ShubhamRamtekkar" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/shubham-ramtekkar-51761529a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://twitter.com/ShubhamRamtekkar" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="mailto:shubhamramtekkar71@gmail.com"><i class="fa-regular fa-envelope"></i></a>
         </div>
-        <div class="hero-btns">
+        <div class="hero-btns reveal">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
       </div>
-      <div class="hero-image">
+      <div class="hero-image reveal">
         <div class="hero-blob">
           <i class="fa-solid fa-code"></i>
         </div>
@@ -54,74 +66,109 @@
 
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-subtitle">Get to know me</p>
+      <h2 class="section-title reveal" data-split>About Me</h2>
+      <p class="section-subtitle reveal" data-split>Get to know me</p>
       <div class="about-grid">
-        <div class="about-card">
+        <div class="about-card reveal">
           <i class="fa-regular fa-face-smile"></i>
-          <h3>2+</h3>
+          <h3>Fresher</h3>
           <p>Years Experience</p>
         </div>
-        <div class="about-card">
+        <div class="about-card reveal">
           <i class="fa-regular fa-folder-open"></i>
-          <h3>10+</h3>
+          <h3>3</h3>
           <p>Projects Done</p>
         </div>
-        <div class="about-card">
-          <i class="fa-regular fa-handshake"></i>
-          <h3>5+</h3>
-          <p>Happy Clients</p>
-        </div>
+
       </div>
-      <p class="about-text">I'm a passionate full-stack developer with expertise in building modern, scalable web applications. I specialize in JavaScript/TypeScript ecosystem including React, Node.js, and MongoDB. I focus on writing clean, maintainable code and creating intuitive user experiences.</p>
+      <p class="about-text reveal" data-split>Motivated Computer Science Engineering (Cyber Security) student with knowledge of Java, Python, SQL, and Digital Forensics. Seeking an opportunity to apply my technical skills, gain practical experience, and contribute to innovative and secure technology solutions while continuously learning and growing professionally.</p>
     </div>
   </section>
 
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section-title">My Skills</h2>
-      <p class="section-subtitle">Technologies I work with</p>
+      <h2 class="section-title reveal" data-split>My Skills</h2>
+      <p class="section-subtitle reveal" data-split>Technologies I work with</p>
       <div class="skills-grid">
 
-        <div class="skill-category">
+        <div class="skill-category reveal">
           <h3><i class="fa-solid fa-code"></i> Frontend</h3>
           <div class="skill-list">
-            <div class="skill-item"><span>HTML5</span><span>95%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
-            <div class="skill-item"><span>CSS3</span><span>90%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-            <div class="skill-item"><span>JavaScript</span><span>92%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
-            <div class="skill-item"><span>React</span><span>88%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+            <div class="skill-item"><span>HTML</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%">70%</div></div>
+            <div class="skill-item"><span>CSS</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%">65%</div></div>
+            <div class="skill-item"><span>JavaScript</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:50%">50%</div></div>
           </div>
         </div>
 
-        <div class="skill-category">
+        <div class="skill-category reveal">
           <h3><i class="fa-solid fa-server"></i> Backend</h3>
           <div class="skill-list">
-            <div class="skill-item"><span>Node.js</span><span>85%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-            <div class="skill-item"><span>Express</span><span>85%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-            <div class="skill-item"><span>Python</span><span>75%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-            <div class="skill-item"><span>REST APIs</span><span>90%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            <div class="skill-item"><span>Python</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div>
+            <div class="skill-item"><span>C++</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%">70%</div></div>
           </div>
         </div>
 
-        <div class="skill-category">
-          <h3><i class="fa-solid fa-database"></i> Database & DevOps</h3>
+        <div class="skill-category reveal">
+          <h3><i class="fa-solid fa-database"></i> Database & Tools</h3>
           <div class="skill-list">
-            <div class="skill-item"><span>MongoDB</span><span>80%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-            <div class="skill-item"><span>PostgreSQL</span><span>75%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-            <div class="skill-item"><span>Docker</span><span>70%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-            <div class="skill-item"><span>Git</span><span>90%</span></div>
-            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            <div class="skill-item"><span>SQL</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:50%">50%</div></div>
+            <div class="skill-item"><span>Supabase</span><span>40%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:40%">40%</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-split>Experience</h2>
+      <p class="section-subtitle reveal" data-split">Where I've worked</p>
+      <div class="experience-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="exp-body">
+            <span class="exp-date">June 2025 - September 2025</span>
+            <h3>Cyber Security Intern</h3>
+            <h4>Codec Technologies India</h4>
+            <p>Worked on cybersecurity operations, threat analysis, and security assessments to help protect digital infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="exp-body">
+            <span class="exp-date">June 2026 - July 2026</span>
+            <h3>Full-Stack Developer Intern</h3>
+            <h4>Codec Technologies India</h4>
+            <p>Developed and maintained full-stack web applications, collaborated on API design, and contributed to frontend and backend development.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-split>Education</h2>
+      <p class="section-subtitle reveal" data-split">My academic background</p>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <h3>G H Raisoni College of Engineering and Management</h3>
+            <h4>Bachelor of Technology - Computer Science Engineering (Cyber Security)</h4>
+            <span class="edu-year">2023 - 2027</span>
           </div>
         </div>
 
@@ -131,11 +178,11 @@
 
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">Some of my recent work</p>
+      <h2 class="section-title reveal" data-split>Featured Projects</h2>
+      <p class="section-subtitle reveal" data-split>Some of my recent work</p>
       <div class="projects-grid">
 
-        <div class="project-card">
+        <div class="project-card reveal">
           <div class="project-img"><i class="fa-solid fa-cart-shopping"></i></div>
           <div class="project-body">
             <h3>E-Commerce Platform</h3>
@@ -150,7 +197,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal">
           <div class="project-img"><i class="fa-solid fa-tasks"></i></div>
           <div class="project-body">
             <h3>Task Management App</h3>
@@ -165,7 +212,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal">
           <div class="project-img"><i class="fa-solid fa-cloud-sun"></i></div>
           <div class="project-body">
             <h3>Weather Dashboard</h3>
@@ -186,28 +233,28 @@
 
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Have a project in mind? Let's talk.</p>
+      <h2 class="section-title reveal" data-split>Get In Touch</h2>
+      <p class="section-subtitle reveal" data-split>Have a project in mind? Let's talk.</p>
       <div class="contact-grid">
         <form class="contact-form" id="contactForm">
-          <div class="form-row">
+          <div class="form-row reveal">
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
           </div>
-          <input type="text" placeholder="Subject" required />
-          <textarea placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit" class="btn btn-primary">
+          <input class="reveal" type="text" placeholder="Subject" required />
+          <textarea class="reveal" placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit" class="btn btn-primary reveal">
             <span>Send Message</span>
             <i class="fa-solid fa-paper-plane"></i>
           </button>
         </form>
         <div class="contact-info">
-          <div class="contact-card">
+          <div class="contact-card reveal">
             <a href="mailto:shubhamramtekkar71@gmail.com"><i class="fa-regular fa-envelope"></i></a>
             <h4>Email</h4>
             <p><a href="mailto:shubhamramtekkar71@gmail.com">shubhamramtekkar71@gmail.com</a></p>
           </div>
-          <div class="contact-card">
+          <div class="contact-card reveal">
             <i class="fa-solid fa-location-dot"></i>
             <h4>Location</h4>
             <p>India</p>
