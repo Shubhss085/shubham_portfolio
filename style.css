@@ -524,6 +524,20 @@ ul { list-style: none; }
   color: var(--text-light);
 }
 
+.about-sub {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.about-sub span {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
 .about-text {
   max-width: 700px;
   margin: 0 auto;
