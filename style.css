@@ -290,22 +290,16 @@ ul { list-style: none; }
   gap: 0.6rem;
   font-size: 1.6rem;
   font-weight: 900;
-  color: var(--primary);
+  color: #5a7a8a;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: none;
-  filter: drop-shadow(0 0 12px var(--primary-glow));
 }
 
 .logo-img {
   width: 40px;
   height: 40px;
-  filter: drop-shadow(0 0 12px var(--primary-glow)) brightness(1.2);
-  -webkit-text-fill-color: initial;
+  opacity: 0.7;
+  filter: brightness(0.6);
 }
 
 .nav-links {
@@ -457,12 +451,12 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   font-size: 5rem;
-  color: var(--primary);
+  color: #3a6a7a;
   margin: 0 auto;
-  box-shadow: 0 0 40px rgba(0, 180, 216, 0.08), inset 0 0 60px rgba(0, 180, 216, 0.05);
+  box-shadow: 0 0 30px rgba(0, 180, 216, 0.04), inset 0 0 40px rgba(0, 180, 216, 0.03);
   animation: float 3s ease-in-out infinite;
   position: relative;
-  border: 1px solid rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.06);
 }
 
 .hero-blob::after {
