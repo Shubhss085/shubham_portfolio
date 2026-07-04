@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shubham Ramtekkar | Languages</title>
+  <title>Shubham Ramtekkar | Cyber Security Student</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
@@ -20,11 +20,101 @@
   <div class="bg-noise"></div>
   <div class="scanline"></div>
 
+  <nav class="navbar reveal">
+    <div class="container nav-container">
+      <a href="#" class="logo"><img src="sr-logo.svg" alt="SR" class="logo-img" /> Shubham</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#task-manager">Task Manager</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <span class="hero-greeting reveal">Hello, I'm</span>
+        <h1 class="reveal" data-split>Shubham Ramtekkar</h1>
+        <h2 class="reveal" data-split>Cyber Security Student</h2>
+        <p class="reveal" data-split">Computer Science Engineering student specializing in Cyber Security with hands-on experience in development and security.</p>
+        <div class="hero-social reveal">
+          <a href="https://github.com/ShubhamRamtekkar" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shubham-ramtekkar-51761529a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/ShubhamRamtekkar" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="mailto:shubhamramtekkar71@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="hero-blob">
+          <i class="fa-solid fa-code"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-split>About Me</h2>
+      <p class="section-subtitle reveal" data-split>Get to know me</p>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <i class="fa-regular fa-face-smile"></i>
+          <h3>Fresher</h3>
+          <p>Years Experience</p>
+          <div class="about-sub">
+            <span>3</span> Projects Done
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <i class="fa-regular fa-folder-open"></i>
+          <h3>3</h3>
+          <p>Projects Done</p>
+        </div>
+
+      </div>
+        <p class="about-text reveal" data-split">Motivated Computer Science Engineering (Cyber Security) student skilled in Python, HTML, CSS, JavaScript, and SQLite. Seeking an opportunity to apply my technical skills, gain practical experience, and contribute to innovative and secure technology solutions while continuously learning and growing professionally.</p>
+    </div>
+  </section>
+
   <section id="skills" class="section">
     <div class="container">
       <h2 class="section-title reveal" data-split>My Skills</h2>
       <p class="section-subtitle reveal" data-split>Technologies I work with</p>
       <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>HTML</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%">70%</div></div>
+            <div class="skill-item"><span>CSS</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%">65%</div></div>
+            <div class="skill-item"><span>JavaScript</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:50%">50%</div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fa-solid fa-server"></i> Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>Python</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div>
+            <div class="skill-item"><span>C++</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%">70%</div></div>
+          </div>
+        </div>
 
         <div class="skill-category reveal">
           <h3><i class="fa-solid fa-code"></i> Languages</h3>
@@ -56,6 +146,55 @@
     </div>
   </section>
 
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-split>Experience</h2>
+      <p class="section-subtitle reveal" data-split">Where I've worked</p>
+      <div class="experience-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="exp-body">
+            <span class="exp-date">June 2025 - September 2025</span>
+            <h3>Cyber Security Intern</h3>
+            <h4>Codec Technologies India</h4>
+            <p>Worked on cybersecurity operations, threat analysis, and security assessments to help protect digital infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="exp-body">
+            <span class="exp-date">June 2026 - July 2026</span>
+            <h3>Full-Stack Developer Intern</h3>
+            <h4>Codec Technologies India</h4>
+            <p>Developed and maintained full-stack web applications, collaborated on API design, and contributed to frontend and backend development.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-split>Education</h2>
+      <p class="section-subtitle reveal" data-split">My academic background</p>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <h3>G H Raisoni College of Engineering and Management</h3>
+            <h4>Bachelor of Technology - Computer Science Engineering (Cyber Security)</h4>
+            <span class="edu-year">2023 - 2027</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section id="task-manager" class="section">
     <div class="container">
       <h2 class="section-title reveal" data-split>Task Manager App</h2>
@@ -75,7 +214,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2 class="section-title reveal" data-split>Get In Touch</h2>
-      <p class="section-subtitle reveal" data-split">Have a project in mind? Let's talk.</p>
+      <p class="section-subtitle reveal" data-split>Have a project in mind? Let's talk.</p>
       <div class="contact-grid">
         <form class="contact-form" id="contactForm">
           <div class="form-row reveal">
